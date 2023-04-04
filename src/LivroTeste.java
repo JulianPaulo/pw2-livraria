@@ -22,8 +22,12 @@ public class LivroTeste {
         /*livroFavorito.nome = "O Código Da Vinci";*/
         livroFavorito.resumo = "bla bla bla bla bla";
         livroFavorito.paginas = 500;
-
         livroFavorito.autor = "Dan Brown";
+
+        Editora editora2 = new Editora();
+        editora2.nome = "Editora Erika";
+        editora2.email = "edErica@erica.com.br";
+        meuLivro.editora = editora2;
 
         livroFavorito.aplicarDesconto(0.25);
 
