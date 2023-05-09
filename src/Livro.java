@@ -15,10 +15,10 @@ public class Livro {
         System.out.println("-------");
     }
 
-    void aplicarDesconto(int percentual) {
+    void aplicarDesconto(Double percentual) {
         if (percentual >= 0.35) {
             System.out.println("Não e possivel aplicar desconto");
-        } else if (!impresso && percentual > 0.15) {
+        } else if (percentual > 0.15) {
             System.out.println("Erro");
         } else {
             preco = preco - (preco * percentual);
