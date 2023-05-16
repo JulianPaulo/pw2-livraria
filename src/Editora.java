@@ -1,10 +1,9 @@
 public class Editora {
-
     private String nome;
     private String email;
 
     public Editora() {
-        this.nome = "Editora Horacio";
+        this.nome = "Etec Horácio";
     }
 
     public Editora(String nome) {
@@ -17,7 +16,7 @@ public class Editora {
 
     public void setNome(String nome) {
         if (nome.length() < 4)
-            System.out.println();
+            System.out.println("Editora inválida");
         else
             this.nome = nome;
     }
@@ -29,6 +28,4 @@ public class Editora {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
 }
