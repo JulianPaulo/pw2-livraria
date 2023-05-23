@@ -11,4 +11,11 @@ public class LivroFisico extends Livro{
     public void aplicarDesconto(){
         preco -= preco * 0.35;
     }
+
+    void aplicarDesconto(double percentual) {
+        if (percentual > 0.3)
+            System.out.println("Desconto não permitido");
+        else
+            preco = preco - (preco * percentual);
+    }
 }
